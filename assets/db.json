@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": "R039",
+      "name": "Desumidificador Cristal",
+      "image": "https://placehold.co/300x200/7dd87f/ffffff?text=Desumidificador+Cristal",
+      "image_icon": "fas fa-snowflake",
+      "details": {
+        "Alimentação (V)": "127~220V",
+        "Garantia": "1 Ano"
+      }
+    },
+    {
+      "id": "A031",
+      "name": "Desumidificador Eco Dry",
+      "image": "https://placehold.co/300x200/7dd87f/ffffff?text=Desumidificador+Eco+Dry",
+      "image_icon": "fas fa-tint",
+      "details": {
+        "Voltagem/Alimentação": "Bivolt",
+        "Cor": "Branco"
+      }
+    },
+    {
+      "id": "C004",
+      "name": "Desumidificador Desidrat Max",
+      "image": "https://placehold.co/300x200/7dd87f/ffffff?text=Desidrat+Max",
+      "image_icon": "fas fa-droplet",
+      "details": {
+        "Alimentação (V)": "127V / 220V",
+        "Garantia": "1 Ano"
+      }
+    },
+    {
+      "id": "U001",
+      "name": "Umidificador Ultrassônico Compact Air",
+      "image": "https://placehold.co/300x200/7dd87f/ffffff?text=Ultrassônico+Air",
+      "image_icon": "fas fa-cloud",
+      "details": {
+        "Alimentação (V)": "127V / 220V",
+        "Capacidade": "2L"
+      }
+    },
+    {
+      "id": "K025",
+      "name": "Desumidificador Komeco KD-25",
+      "image": "https://placehold.co/300x200/7dd87f/ffffff?text=Komeco+KD-25",
+      "image_icon": "fas fa-wind",
+      "details": {
+        "Alimentação (V)": "127V / 220V",
+        "Capacidade": "25L/dia"
+      }
+    },
+    {
+      "id": "B001",
+      "name": "Umidificador Digital Breath Íon",
+      "image": "https://placehold.co/300x200/7dd87f/ffffff?text=Breath+Íon",
+      "image_icon": "fas fa-leaf",
+      "details": {
+        "Alimentação (V)": "127V / 220V",
+        "Ionização": "Sim"
+      }
+    },
+    {
+      "id": "I100",
+      "name": "Desumidificador Industrial DI-100",
+      "image": "https://placehold.co/300x200/7dd87f/ffffff?text=Industrial+DI-100",
+      "image_icon": "fas fa-industry",
+      "details": {
+        "Alimentação (V)": "220V",
+        "Capacidade": "100L/dia"
+      }
+    },
+    {
+      "id": "N500",
+      "name": "Umidificador Nebulizador UN-500",
+      "image": "https://placehold.co/300x200/7dd87f/ffffff?text=Nebulizador+UN-500",
+      "image_icon": "fas fa-smog",
+      "details": {
+        "Alimentação (V)": "127V / 220V",
+        "Capacidade": "5L"
+      }
+    }
+  ]
+}

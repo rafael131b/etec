@@ -1,0 +1,74 @@
+[
+  {
+    "id": "R039",
+    "name": "Desumidificador Cristal",
+    "image_icon": "fas fa-snowflake",
+    "details": {
+      "Alimentacao (V)": "127~220V",
+      "Garantia": "1 Ano"
+    }
+  },
+  {
+    "id": "A031",
+    "name": "Desumidificador Eco Dry",
+    "image_icon": "fas fa-tint",
+    "details": {
+      "Voltagem/Alimentacao": "Bivolt",
+      "Cor": "Branco"
+    }
+  },
+  {
+    "id": "C004",
+    "name": "Desumidificador Desidrat Max",
+    "image_icon": "fas fa-droplet",
+    "details": {
+      "Alimentacao (V)": "127V / 220V",
+      "Garantia": "1 Ano"
+    }
+  },
+  {
+    "id": "U001",
+    "name": "Umidificador Ultrassônico Compact Air",
+    "image_icon": "fas fa-cloud",
+    "details": {
+      "Alimentacao (V)": "127V / 220V",
+      "Capacidade": "2L"
+    }
+  },
+  {
+    "id": "K025",
+    "name": "Desumidificador Komeco KD-25",
+    "image_icon": "fas fa-wind",
+    "details": {
+      "Alimentacao (V)": "127V / 220V",
+      "Capacidade": "25L/dia"
+    }
+  },
+  {
+    "id": "B001",
+    "name": "Umidificador Digital Breath Íon",
+    "image_icon": "fas fa-leaf",
+    "details": {
+      "Alimentacao (V)": "127V / 220V",
+      "Ionizacao": "Sim"
+    }
+  },
+  {
+    "id": "I100",
+    "name": "Desumidificador Industrial DI-100",
+    "image_icon": "fas fa-industry",
+    "details": {
+      "Alimentacao (V)": "220V",
+      "Capacidade": "100L/dia"
+    }
+  },
+  {
+    "id": "N500",
+    "name": "Umidificador Nebulizador UN-500",
+    "image_icon": "fas fa-smog",
+    "details": {
+      "Alimentacao (V)": "127V / 220V",
+      "Capacidade": "5L"
+    }
+  }
+]
