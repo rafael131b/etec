@@ -242,7 +242,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe sections for animations
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.services, .welcome, .quotes');
+    const sections = document.querySelectorAll('.services, .welcome, .quotes, .blog');
     
     sections.forEach(section => {
         section.style.opacity = '0';
@@ -378,6 +378,10 @@ function setActiveNavLink() {
         else if (normalizedPage === 'produtos.html' && href.endsWith('produtos.html')) {
             link.classList.add('active');
         }
+        // For contatos.html, the contatos.html link should be active
+        else if (normalizedPage === 'contatos.html' && href.endsWith('contatos.html')) {
+            link.classList.add('active');
+        }
     });
 }
 
@@ -508,3 +512,141 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCarousel();
     startAutoSlide(); // Start automatic sliding
 });
+
+// Contact form validation and handling
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+
+    if (contactForm) {
+        // Real-time validation
+        const inputs = ['name', 'email', 'phone', 'subject', 'message'];
+        inputs.forEach(fieldId => {
+            const input = document.getElementById(fieldId);
+            if (input) {
+                input.addEventListener('blur', () => validateField(fieldId));
+                input.addEventListener('input', () => clearFieldError(fieldId));
+            }
+        });
+
+        contactForm.addEventListener('submit', function(e) {
+            if (!validateForm()) {
+                e.preventDefault();
+                return false;
+            }
+            // If validation passes, let formsubmit.co handle the submission
+            // The form will be submitted normally and redirect to thank-you.html
+        });
+    }
+});
+
+function validateField(fieldId) {
+    const input = document.getElementById(fieldId);
+    const errorElement = document.getElementById(fieldId + '-error');
+    let isValid = true;
+    let errorMessage = '';
+
+    if (!input || !errorElement) return true;
+
+    const value = input.value.trim();
+
+    switch (fieldId) {
+        case 'name':
+            if (!value) {
+                isValid = false;
+                errorMessage = 'Nome é obrigatório';
+            } else if (value.length < 2) {
+                isValid = false;
+                errorMessage = 'Nome deve ter pelo menos 2 caracteres';
+            }
+            break;
+
+        case 'email':
+            if (!value) {
+                isValid = false;
+                errorMessage = 'Email é obrigatório';
+            } else {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(value)) {
+                    isValid = false;
+                    errorMessage = 'Por favor, insira um email válido';
+                }
+            }
+            break;
+
+        case 'phone':
+            if (value && !/^[\d\s\-\+\(\)]+$/.test(value)) {
+                isValid = false;
+                errorMessage = 'Por favor, insira um telefone válido';
+            }
+            break;
+
+        case 'subject':
+            if (!value) {
+                isValid = false;
+                errorMessage = 'Assunto é obrigatório';
+            } else if (value.length < 3) {
+                isValid = false;
+                errorMessage = 'Assunto deve ter pelo menos 3 caracteres';
+            }
+            break;
+
+        case 'message':
+            if (!value) {
+                isValid = false;
+                errorMessage = 'Mensagem é obrigatória';
+            } else if (value.length < 10) {
+                isValid = false;
+                errorMessage = 'Mensagem deve ter pelo menos 10 caracteres';
+            } else if (value.length > 1000) {
+                isValid = false;
+                errorMessage = 'Mensagem deve ter no máximo 1000 caracteres';
+            }
+            break;
+    }
+
+    if (isValid) {
+        input.classList.remove('error');
+        input.classList.add('valid');
+        errorElement.textContent = '';
+        errorElement.classList.remove('show');
+    } else {
+        input.classList.remove('valid');
+        input.classList.add('error');
+        errorElement.textContent = errorMessage;
+        errorElement.classList.add('show');
+    }
+
+    return isValid;
+}
+
+function clearFieldError(fieldId) {
+    const input = document.getElementById(fieldId);
+    const errorElement = document.getElementById(fieldId + '-error');
+
+    if (input && errorElement) {
+        input.classList.remove('error', 'valid');
+        errorElement.textContent = '';
+        errorElement.classList.remove('show');
+    }
+}
+
+function validateForm() {
+    const fields = ['name', 'email', 'subject', 'message'];
+    let isFormValid = true;
+
+    fields.forEach(fieldId => {
+        if (!validateField(fieldId)) {
+            isFormValid = false;
+        }
+    });
+
+    // Phone is optional, only validate if has value
+    const phoneInput = document.getElementById('phone');
+    if (phoneInput && phoneInput.value.trim()) {
+        if (!validateField('phone')) {
+            isFormValid = false;
+        }
+    }
+
+    return isFormValid;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - ETEC Aparelhos-Medição</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>ETEC</h1>
+                    <span>Aparelhos-Medição</span>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> HOME</a></li>
+                    <li><a href="index.html#blog" class="nav-link"><i class="fas fa-blog"></i> BLOG</a></li>
+                    <li><a href="index.html#servicos" class="nav-link"><i class="fas fa-cogs"></i> SERVIÇOS</a></li>
+                    <li><a href="produtos.html" class="nav-link"><i class="fas fa-box"></i> PRODUTOS</a></li>
+                    <li><a href="contatos.html" class="nav-link"><i class="fas fa-envelope"></i> CONTATOS</a></li>
+                </ul>
+            </nav>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Buscar Produtos" class="search-input">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Entre em Contato</h2>
+                    <p>Estamos aqui para ajudar. Preencha o formulário ao lado ou entre em contato pelos nossos canais de atendimento.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Localização</h3>
+                                <p>São Paulo, Brasil</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Telefone</h3>
+                                <p>(11) 1234-5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>rafa.timoteo.c@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <p>(11) 91234-5678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Envie uma Mensagem</h2>
+                    <form id="contactForm" class="contact-form" action="https://formsubmit.co/rafa.timoteo.c@gmail.com"  method="POST">
+                        <input type="hidden" name="_next" value="thank-you.html">
+                        <input type="hidden" name="_subject" value="Nova mensagem do site ETEC">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Seu Telefone">
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ETEC Aparelhos-Medição</h3>
+                    <p>Soluções em equipamentos médicos com qualidade e confiança.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#servicos">Serviços</a></li>
+                        <li><a href="./produtos.html">Produtos</a></li>
+                        <li><a href="./contatos.html">Contatos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> rafa.timoteo.c@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ETEC Aparelhos-Medição. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-button">
+        <a href="https://wa.me/5511999999999" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
