@@ -19,7 +19,7 @@ function toggleMobileMenu() {
         nav.style.top = '100%';
         nav.style.left = '0';
         nav.style.right = '0';
-        nav.style.background = 'rgba(44, 85, 48, 0.95)';
+        nav.style.background = 'rgba(255, 255, 255, 0.95)';
         nav.style.backdropFilter = 'blur(10px)';
         nav.style.padding = '1rem';
         nav.style.borderRadius = '0 0 16px 16px';
@@ -127,7 +127,7 @@ function showSearchMessage(message) {
         position: fixed;
         top: 100px;
         right: 20px;
-        background: #7dd87f;
+        background: #008000;
         color: white;
         padding: 12px 20px;
         border-radius: 8px;
@@ -208,13 +208,13 @@ function animateServiceCards() {
 // Header Scroll Effect
 function handleHeaderScroll() {
     const scrolled = window.scrollY > 50;
-    
+
     if (scrolled) {
-        header.style.background = 'rgba(44, 85, 48, 0.95)';
+        header.style.background = 'rgba(255, 255, 255, 0.95)';
         header.style.backdropFilter = 'blur(10px)';
         header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.2)';
     } else {
-        header.style.background = 'linear-gradient(135deg, #2c5530 0%, #4a7c59 100%)';
+        header.style.background = '#FFFFFF';
         header.style.backdropFilter = 'none';
         header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
     }
@@ -402,7 +402,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             "id": "R039",
             "name": "Desumidificador Cristal",
-            "image": "https://placehold.co/300x200/7dd87f/ffffff?text=Desumidificador+Cristal",
+            "image": "https://placehold.co/300x200/008000/ffffff?text=Desumidificador+Cristal",
             "image_icon": "fas fa-snowflake",
             "details": {
                 "Alimentação (V)": "127~220V",
@@ -412,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             "id": "A031",
             "name": "Desumidificador Eco Dry",
-            "image": "https://placehold.co/300x200/7dd87f/ffffff?text=Desumidificador+Eco+Dry",
+            "image": "https://placehold.co/300x200/008000/ffffff?text=Desumidificador+Eco+Dry",
             "image_icon": "fas fa-tint",
             "details": {
                 "Voltagem/Alimentação": "Bivolt",
@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             "id": "C004",
             "name": "Desumidificador Desidrat Max",
-            "image": "https://placehold.co/300x200/7dd87f/ffffff?text=Desidrat+Max",
+            "image": "https://placehold.co/300x200/008000/ffffff?text=Desidrat+Max",
             "image_icon": "fas fa-droplet",
             "details": {
                 "Alimentação (V)": "127V / 220V",

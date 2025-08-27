@@ -31,10 +31,10 @@ function showProductDetails(productName) {
     `;
     
     modalContent.innerHTML = `
-        <h2 style="color: #2c5530; margin-bottom: 1rem;">${productName}</h2>
+        <h2 style="color: #008000; margin-bottom: 1rem;">${productName}</h2>
         <p style="color: #666; margin-bottom: 2rem;">Detalhes completos do produto em breve. Entre em contato para mais informações.</p>
         <div style="display: flex; gap: 1rem; justify-content: center;">
-            <button class="modal-btn primary" style="padding: 10px 20px; background: #7dd87f; color: white; border: none; border-radius: 8px; cursor: pointer;">Solicitar Informações</button>
+            <button class="modal-btn primary" style="padding: 10px 20px; background: #008000; color: white; border: none; border-radius: 8px; cursor: pointer;">Solicitar Informações</button>
             <button class="modal-btn secondary" style="padding: 10px 20px; background: #f0f0f0; color: #666; border: none; border-radius: 8px; cursor: pointer;">Fechar</button>
         </div>
     `;
@@ -97,12 +97,12 @@ function showContactModal(type) {
     `;
     
     modalContent.innerHTML = `
-        <div style="color: #7dd87f; font-size: 3rem; margin-bottom: 1rem;">
+        <div style="color: #008000; font-size: 3rem; margin-bottom: 1rem;">
             <i class="fas fa-check-circle"></i>
         </div>
-        <h2 style="color: #2c5530; margin-bottom: 1rem;">${title}</h2>
+        <h2 style="color: #008000; margin-bottom: 1rem;">${title}</h2>
         <p style="color: #666; margin-bottom: 2rem;">${message}</p>
-        <button class="modal-btn" style="padding: 12px 24px; background: #7dd87f; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">OK</button>
+        <button class="modal-btn" style="padding: 12px 24px; background: #008000; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">OK</button>
     `;
     
     modal.appendChild(modalContent);
@@ -135,7 +135,7 @@ function showMessage(message) {
         position: fixed;
         top: 100px;
         right: 20px;
-        background: #7dd87f;
+        background: #008000;
         color: white;
         padding: 12px 20px;
         border-radius: 8px;
