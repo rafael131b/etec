@@ -20,7 +20,7 @@ body {
 
 /* Header Styles */
 .header {
-    background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+    background: #FFFFFF;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -41,7 +41,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: white;
+    color: #008000;
 }
 
 .logo-icon {
@@ -53,7 +53,7 @@ body {
 
 .logo-icon i {
     font-size: 24px;
-    color: #7dd87f;
+    color: #008000;
 }
 
 .logo-text h1 {
@@ -76,7 +76,7 @@ body {
 }
 
 .nav-link {
-    color: white;
+    color: #008000;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -90,7 +90,7 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 128, 0, 0.1);
     transform: translateY(-2px);
 }
 
@@ -102,7 +102,7 @@ body {
 .search-container {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 128, 0, 0.1);
     border-radius: 25px;
     padding: 4px;
     backdrop-filter: blur(10px);
@@ -111,7 +111,7 @@ body {
 .search-input {
     background: transparent;
     border: none;
-    color: white;
+    color: #008000;
     padding: 8px 16px;
     outline: none;
     font-size: 14px;
@@ -119,11 +119,11 @@ body {
 }
 
 .search-input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 128, 0, 0.7);
 }
 
 .search-btn {
-    background: #7dd87f;
+    background: #008000;
     border: none;
     color: white;
     padding: 8px 12px;
@@ -133,7 +133,7 @@ body {
 }
 
 .search-btn:hover {
-    background: #6bc46f;
+    background: #006400;
     transform: scale(1.05);
 }
 
@@ -142,7 +142,7 @@ body {
     display: none;
     background: none;
     border: none;
-    color: white;
+    color: #008000;
     font-size: 20px;
     cursor: pointer;
 }
@@ -151,8 +151,8 @@ body {
 /* Product Carousel Section */
 .product-carousel-section {
     padding: 100px 0;
-    background: linear-gradient(135deg, #7dd87f 0%, #4a7c59 50%, #2c5530 100%);
-    color: white;
+    background: #FFFFFF;
+    color: #008000;
     text-align: center;
     min-height: 100vh;
     display: flex;
@@ -210,7 +210,7 @@ body {
 .carousel-item h3 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    color: #2c5530;
+    color: #008000;
 }
 
 .carousel-item p {
@@ -256,7 +256,7 @@ body {
 .blog h2 {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #2c5530;
+    color: #008000;
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -268,12 +268,12 @@ body {
 }
 
 .blog-post {
-    background: #f8fffe;
+    background: #FFFFFF;
     padding: 2rem;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    border: 1px solid rgba(125, 216, 127, 0.1);
+    border: 1px solid rgba(0, 128, 0, 0.1);
 }
 
 .blog-post:hover {
@@ -284,7 +284,7 @@ body {
 .blog-image {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #7dd87f, #6bc46f);
+    background: linear-gradient(135deg, #008000, #006400);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -301,7 +301,7 @@ body {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #2c5530;
+    color: #008000;
 }
 
 .blog-content p {
@@ -311,21 +311,21 @@ body {
 }
 
 .blog-link {
-    color: #7dd87f;
+    color: #008000;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .blog-link:hover {
-    color: #6bc46f;
+    color: #006400;
     text-decoration: underline;
 }
 
 /* Services Section */
 .services {
     padding: 100px 0;
-    background: #f8fffe;
+    background: #FFFFFF;
 }
 
 .services-grid {
@@ -340,7 +340,7 @@ body {
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    border: 1px solid rgba(125, 216, 127, 0.1);
+    border: 1px solid rgba(0, 128, 0, 0.1);
 }
 
 .service-card:hover {
@@ -351,7 +351,7 @@ body {
 .service-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #7dd87f, #6bc46f);
+    background: linear-gradient(135deg, #008000, #006400);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -368,7 +368,7 @@ body {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #2c5530;
+    color: #008000;
 }
 
 .service-card p {
@@ -378,14 +378,14 @@ body {
 }
 
 .service-link {
-    color: #7dd87f;
+    color: #008000;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .service-link:hover {
-    color: #6bc46f;
+    color: #006400;
     text-decoration: underline;
 }
 
@@ -408,7 +408,7 @@ body {
 .welcome-text h2 {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #2c5530;
+    color: #008000;
     margin-bottom: 1.5rem;
 }
 
@@ -427,12 +427,12 @@ body {
 .profile-placeholder {
     width: 200px;
     height: 200px;
-    background: linear-gradient(135deg, #7dd87f, #6bc46f);
+    background: linear-gradient(135deg, #008000, #006400);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 15px 40px rgba(125, 216, 127, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 128, 0, 0.3);
 }
 
 .profile-placeholder i {
@@ -443,13 +443,13 @@ body {
 /* Quotes Section */
 .quotes {
     padding: 80px 0;
-    background: linear-gradient(135deg, #f8fffe 0%, #e8f5e8 100%);
+    background: #FFFFFF;
 }
 
 .quotes h2 {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #2c5530;
+    color: #008000;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -467,13 +467,13 @@ body {
 .quote-card blockquote {
     font-size: 1.5rem;
     font-style: italic;
-    color: #4a7c59;
+    color: #008000;
     line-height: 1.6;
 }
 
 /* Footer */
 .footer {
-    background: #2c5530;
+    background: #008000;
     color: white;
     padding: 60px 0 20px;
 }
@@ -488,7 +488,7 @@ body {
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: #7dd87f;
+    color: #FFFFFF;
 }
 
 .footer-section p {
@@ -513,7 +513,7 @@ body {
 
 .footer-section ul li a:hover {
     opacity: 1;
-    color: #7dd87f;
+    color: #FFFFFF;
 }
 
 .footer-bottom {
@@ -625,12 +625,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #7dd87f;
+    background: #008000;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #6bc46f;
+    background: #006400;
 }
 
 /* Contact Section */
@@ -648,7 +648,7 @@ html {
 .contact-info h2,
 .contact-form-container h2 {
     font-size: 2rem;
-    color: #2c5530;
+    color: #008000;
     margin-bottom: 1rem;
 }
 
@@ -672,14 +672,14 @@ html {
 
 .contact-item i {
     font-size: 1.5rem;
-    color: #7dd87f;
+    color: #008000;
     margin-top: 0.2rem;
 }
 
 .contact-item h3 {
     font-size: 1.1rem;
     margin-bottom: 0.2rem;
-    color: #2c5530;
+    color: #008000;
 }
 
 .contact-item p {
@@ -713,8 +713,8 @@ html {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #7dd87f;
-    box-shadow: 0 0 0 3px rgba(125, 216, 127, 0.2);
+    border-color: #008000;
+    box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.2);
 }
 
 .form-group textarea {
@@ -723,7 +723,7 @@ html {
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #7dd87f 0%, #6bc46f 100%);
+    background: linear-gradient(135deg, #008000 0%, #006400 100%);
     color: white;
     border: none;
     padding: 12px 24px;
@@ -737,7 +737,7 @@ html {
 
 .submit-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(125, 216, 127, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 128, 0, 0.3);
 }
 
 .submit-btn:active {
@@ -766,8 +766,8 @@ html {
 
 .form-group input.valid,
 .form-group textarea.valid {
-    border-color: #7dd87f;
-    box-shadow: 0 0 0 3px rgba(125, 216, 127, 0.2);
+    border-color: #008000;
+    box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.2);
 }
 
 /* Responsive adjustments for contact page */
@@ -800,13 +800,13 @@ html {
 
 .thank-you-icon {
     font-size: 80px;
-    color: #7dd87f;
+    color: #008000;
     margin-bottom: 2rem;
 }
 
 .thank-you-content h1 {
     font-size: 2.5rem;
-    color: #2c5530;
+    color: #008000;
     margin-bottom: 1rem;
     font-weight: 600;
 }
@@ -838,23 +838,23 @@ html {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #7dd87f 0%, #6bc46f 100%);
+    background: linear-gradient(135deg, #008000 0%, #006400 100%);
     color: white;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(125, 216, 127, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 128, 0, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #7dd87f;
-    border: 2px solid #7dd87f;
+    color: #008000;
+    border: 2px solid #008000;
 }
 
 .btn-secondary:hover {
-    background: #7dd87f;
+    background: #008000;
     color: white;
     transform: translateY(-2px);
 }
